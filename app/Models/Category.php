@@ -3,18 +3,20 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Icon extends Model
+class Category extends Model
 {
-    use SoftDeletes;
+    use InteractsWithMedia;
     protected $dates = ['deleted_at'];
-    protected $fillable = ['title','text','icon','user_id','status'];
+    protected $fillable = ['name','user_id','status'];
+
 
     public function user()
     {
         return $this->belongsTo(User::class);
     }
+
 
     public function scopeStatus($query,$arg){
         return $query->where('status' , $arg);

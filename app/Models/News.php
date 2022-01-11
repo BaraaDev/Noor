@@ -8,13 +8,11 @@ use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
-class RealEstate extends Model implements HasMedia
+class News extends Model implements HasMedia
 {
-
     use InteractsWithMedia, SoftDeletes;
     protected $dates = ['deleted_at'];
     protected $fillable = ['title','content','user_id','status'];
-
 
     public function user()
     {
