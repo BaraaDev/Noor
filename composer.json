@@ -15,8 +15,11 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "2.4",
+        "laravelcollective/html": "^6.2",
         "mcamara/laravel-localization": "^1.6",
-        "spatie/laravel-medialibrary": "^8.0.0"
+        "spatie/laravel-medialibrary": "^9.0.0",
+        "stevebauman/active": "2.0.0.*",
+        "stevebauman/location": "^6.2"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

@@ -42,7 +42,11 @@ class User extends Authenticatable implements HasMedia
 
     public function getPhotoAttribute()
     {
-        return $this->getFirstMediaUrl('images','image');
+        if ($this->getFirstMediaUrl('images','image')) {
+            return $this->getFirstMediaUrl('images','image');
+        } else {
+            return asset('users/avatar.jpg');
+        }
     }
 
     public function registerMediaConversions(Media $media = null): void

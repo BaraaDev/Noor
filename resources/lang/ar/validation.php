@@ -132,4 +132,61 @@ return [
             'rule-name' => 'custom-message',
         ],
     ],
+
+
+
+    /*
+  |--------------------------------------------------------------------------
+  | Custom Validation Attributes
+  |--------------------------------------------------------------------------
+  |
+  | The following language lines are used to swap our attribute placeholder
+  | with something more reader friendly such as "E-Mail Address" instead
+  | of "email". This simply helps us make our message more expressive.
+  |
+  */
+
+    'attributes' => [
+        'address'               => 'العنوان',
+        'age'                   => 'العمر',
+        'available'             => 'مُتاح',
+        'body'                  => 'المُحتوى',
+        'city'                  => 'المدينة',
+        'content'               => 'المُحتوى',
+        'country'               => 'الدولة',
+        'date'                  => 'التاريخ',
+        'day'                   => 'اليوم',
+        'description'           => 'الوصف',
+        'email'                 => 'البريد الالكتروني',
+        'excerpt'               => 'المُلخص',
+        'first_name'            => 'الاسم الأول',
+        'gender'                => 'النوع',
+        'hour'                  => 'ساعة',
+        'last_name'             => 'اسم العائلة',
+        'message'               => 'الرسالة',
+        'minute'                => 'دقيقة',
+        'mobile'                => 'الجوال',
+        'month'                 => 'الشهر',
+        'name'                  => 'الاسم',
+        'password'              => 'كلمة المرور',
+        'password_confirmation' => 'تأكيد كلمة المرور',
+        'phone'                 => 'الهاتف',
+        'photo'                 => 'الصورة',
+        'price'                 => 'السعر',
+        'role'                  => 'الصلاحية',
+        'second'                => 'ثانية',
+        'sex'                   => 'الجنس',
+        'size'                  => 'الحجم',
+        'subject'               => 'الموضوع',
+        'terms'                 => 'الأحكام',
+        'time'                  => 'الوقت',
+        'title'                 => 'العنوان',
+        'username'              => 'اسم المُستخدم',
+        'year'                  => 'السنة',
+        'Area'                  => 'المساحة',
+        'location_id'           => 'الموقع',
+        'category_id'           => 'القسم',
+        'user_id'               => 'المستخدم',
+        'status'                => 'الحالة',
+    ],
 ];

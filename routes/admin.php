@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,11 +13,47 @@ use Illuminate\Support\Facades\Route;
 | contains the "admin" middleware group. Now create something great!
 |
 */
+Route::namespace('Admin')
+    ->middleware('auth','localeSessionRedirect', 'localizationRedirect', 'localeViewPath')
+    ->prefix('dashboard',LaravelLocalization::setLocale())
+    ->group(function () {
 
-Route::get('dashboard/', function () {
-    return view('admin.welcome');
+    Route::get('/', 'HomeController@index')->name('home.dashboard');
+    Route::get('/visits','HomeController@visits')->name('admin.visits');
+    Route::resource('users','UserController'); // Route user resource
+
+    /** Start route settings **/
+    Route::resource('settings','SettingController'); // Route settings
+    /** End route settings **/
+
+    /** Start route categories **/
+    Route::resource('categories','CategoryController');  // Route slider categories
+    /** End route categories **/
+
+
+    /** Start route real_estates **/
+    Route::resource('real_estates','RealEstateController');  // Route slider real_estates
+    /** End route real_estates **/
+
+
+    /** Start route projects **/
+    Route::resource('projects','ProjectController');  // Route slider projects
+    /** End route projects **/
+
+
+    /** Start route icons **/
+    Route::resource('icons','IconController');  // Route slider icons
+    /** End route icons **/
+
+
+    /** Start route services **/
+    Route::resource('services','ServiceController');  // Route slider services
+    /** End route services **/
+
+
+    /** Start route profile **/
+    Route::get('profile', 'ProfileController@profile')->name('profile.index'); // Route profile
+    Route::post('profile', 'ProfileController@profileUpdate')->name('profile.update'); // update profile
+    Route::post('profileUpdatePassword', 'ProfileController@profileUpdatePassword')->name('profile.update.password'); // update profile
+    /** End route profile **/
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
