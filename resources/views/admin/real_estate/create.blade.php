@@ -2,12 +2,18 @@
 @inject('model', 'App\Models\Category')
 
 @section('titleDashboard')
-    {{__('admin/real_estate.add_real_estate')}}
+    / {{__('admin/real_estate.add_real_estate')}}
 @endsection
 @section('head1')
     <script src="{{asset('admin/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
     <script src="{{asset('admin/global_assets/js/plugins/forms/selects/select2.min.js')}}"></script>
     <script src="{{asset('admin/global_assets/js/plugins/editors/summernote/summernote.min.js')}}"></script>
+    {{--start Uploade Files --}}
+    <script src="{{asset('admin/global_assets/js/demo_pages/uploader_bootstrap.js')}}"></script>
+    <script src="{{asset('admin/global_assets/js/plugins/uploaders/fileinput/fileinput.min.js')}}"></script>
+    <script src="{{asset('admin/global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js')}}"></script>
+    <script src="{{asset('admin/global_assets/js/plugins/uploaders/fileinput/plugins/purify.min.js')}}"></script>
+    {{--end Uploade Files --}}
 @endsection
 
 @section('head2')

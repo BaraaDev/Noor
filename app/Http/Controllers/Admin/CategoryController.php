@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -34,7 +35,15 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $categories = Category::create($request->all());
+        $random = Str::random(10);
 
+        if ($request->hasFile('image')) {
+            $categories
+                ->addMediaFromRequest('image')
+                ->UsingName($categories->name)
+                ->UsingFileName("$random.Webp")
+                ->toMediaCollection('images');
+        }
         return redirect()->route('categories.index')
             ->with(['message' => "تم إضافة قسم جديد $categories->name بنجاح "]);
 
@@ -51,6 +60,16 @@ class CategoryController extends Controller
         $categories = Category::findOrFail($id);
         $categories->update($request->all());
 
+        $random = Str::random(10);
+
+        if ($request->hasFile('image')) {
+            $categories
+                ->clearMediaCollection('images')
+                ->addMediaFromRequest('image')
+                ->UsingName($categories->name)
+                ->UsingFileName("$random.Webp")
+                ->toMediaCollection('images');
+        }
         return redirect()->route('categories.index')
             ->with(['message' => "تم تعديل قسم$categories->name بنجاح "]);
     }

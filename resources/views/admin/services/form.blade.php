@@ -26,7 +26,7 @@
     <!-- Start description input -->
     @php $description = "description"; @endphp
     <div class="form-group row">
-        <label class="col-form-label col-lg-3">{{__('admin/services.content')}}<span class="text-danger">*</span></label>
+        <label class="col-form-label col-lg-3">{{__('admin/services.description')}}<span class="text-danger">*</span></label>
         <div class="col-lg-9">
             <textarea name="{{$description}}" class="form-control summernote" rows="4" cols="4">{{Request::old($description) ? Request::old($description) : $model->$description}}</textarea>
         </div>

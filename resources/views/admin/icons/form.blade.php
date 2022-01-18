@@ -28,7 +28,7 @@
     <div class="form-group row">
         <label class="col-form-label col-lg-3">{{__('admin/icons.content')}}<span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <textarea name="{{$content}}" class="form-control summernote" rows="4" cols="4">{{Request::old($content) ? Request::old($content) : $model->$content}}</textarea>
+            <textarea name="{{$content}}" class="form-control" rows="4" cols="4">{{Request::old($content) ? Request::old($content) : $model->$content}}</textarea>
         </div>
     </div><!-- End content input -->
 

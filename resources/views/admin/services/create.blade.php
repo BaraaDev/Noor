@@ -2,7 +2,7 @@
 @inject('model', 'App\Models\Service')
 
 @section('titleDashboard')
-    {{__('admin/services.add_services')}}
+    / {{__('admin/services.add_services')}}
 @endsection
 @section('head1')
     <script src="{{asset('admin/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>

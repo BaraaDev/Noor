@@ -21,9 +21,9 @@
                 <div class="breadcrumb">
                     <a href="{{route('home.dashboard')}}" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> {{__('admin/admin.dashboard')}}</a>
                     @if($request->keyword)
-                        <a href="{{route('projects.index')}}" class="breadcrumb-item"><i class="icon-briefcase mr-2"></i> {{__('admin/projects.projects')}}</a>
+                        <a href="{{route('projects.index')}}" class="breadcrumb-item"><i class="icon-portfolio mr-2"></i> {{__('admin/projects.projects')}}</a>
                     @endif
-                    <span class="breadcrumb-item active"><i class="icon-briefcase mr-2"></i>@if($request->keyword){{Request::old('keyword') ? Request::old('keyword') : $request->keyword}} @else {{__('admin/projects.projects')}} @endif</span>
+                    <span class="breadcrumb-item active"><i class="icon-portfolio mr-2"></i>@if($request->keyword){{Request::old('keyword') ? Request::old('keyword') : $request->keyword}} @else {{__('admin/projects.projects')}} @endif</span>
                 </div>
             </div>
         </div>

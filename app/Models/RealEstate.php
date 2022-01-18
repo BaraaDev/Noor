@@ -33,7 +33,7 @@ class RealEstate extends Model implements HasMedia
     }
     public function getPhotoAttribute()
     {
-        return $this->getFirstMediaUrl('images','image');
+        return $this->getMedia('images');
     }
 
     public function registerMediaConversions(Media $media = null): void

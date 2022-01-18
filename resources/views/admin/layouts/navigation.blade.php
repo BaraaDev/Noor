@@ -81,6 +81,30 @@
             </ul>
         </li>
 
+
+        <li class="nav-item nav-item-submenu @if(active()->route('services.*')) nav-item-expanded nav-item-open @endif">
+            <a href="{{route('services.index')}}" class="nav-link {{active()->route('services.*')}}">
+                <i class="icon-wrench3"></i>
+                <span>{{__('admin/services.services')}}</span>
+            </a>
+            <ul class="nav nav-group-sub" data-submenu-title="{{__('admin/services.services')}}">
+                <li class="nav-item"><a href="{{route('services.index')}}" class="nav-link {{active()->route('services.index')}}"><span><span>{{__('admin/services.services')}}</span></span></a></li>
+                <li class="nav-item"><a href="{{route('services.create')}}" class="nav-link {{active()->route('services.create')}}"><span>{{__('admin/services.add_services')}}</span></a></li>
+            </ul>
+        </li>
+
+
+        <li class="nav-item nav-item-submenu @if(active()->route('news.*')) nav-item-expanded nav-item-open @endif">
+            <a href="{{route('news.index')}}" class="nav-link {{active()->route('news.*')}}">
+                <i class="icon-newspaper"></i>
+                <span>{{__('admin/news.the_news')}}</span>
+            </a>
+            <ul class="nav nav-group-sub" data-submenu-title="{{__('admin/news.the_news')}}">
+                <li class="nav-item"><a href="{{route('news.index')}}" class="nav-link {{active()->route('news.index')}}"><span><span>{{__('admin/news.the_news')}}</span></span></a></li>
+                <li class="nav-item"><a href="{{route('news.create')}}" class="nav-link {{active()->route('news.create')}}"><span>{{__('admin/news.add_news')}}</span></a></li>
+            </ul>
+        </li>
+
         <li class="nav-item-header mt-0"><div class="text-uppercase font-size-xs line-height-xs">{{__('admin/admin.menu_settings')}}</div> <i class="icon-menu" title="Main"></i></li>
         <li class="nav-item nav-item-submenu">
             <a href="{{route('settings.index')}}" class="nav-link {{active()->route('settings.*')}}">

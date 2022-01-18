@@ -36,6 +36,15 @@
         </div>
     </div>
 
+    <!-- Start image input -->
+    <div class="form-group row">
+        <label class="col-form-label col-lg-3">{{__('admin/news.photo')}}</label>
+        <div class="col-lg-9">
+            <input type="file" name="image" class="form-control-uniform" data-fouc>
+        </div>
+    </div><!-- End image input -->
+
+
     <!-- Select-->
     @php $input = "status"; @endphp
     <div class="form-group row">

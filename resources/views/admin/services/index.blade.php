@@ -123,7 +123,7 @@
                                                  'action' => ['Admin\ServiceController@destroy',$service->id],
                                                  'method' => 'delete'
                                              ])!!}
-                                            <button class="dropdown-item" onclick="return confirm('{{__('admin/services.are_sure_delete')}} {{$service->name}} ؟');"><i class="icon-trash-alt" ></i> {{__('admin/admin.delete')}} "{{$service->name}}"</button>
+                                            <button class="dropdown-item" onclick="return confirm('{{__('admin/services.are_sure_delete')}} {{$service->name}} ? ');"><i class="icon-trash-alt" ></i> {{__('admin/admin.delete')}} "{{$service->name}}"</button>
                                             {!! Form::close() !!}
                                         </div>
                                     </div>

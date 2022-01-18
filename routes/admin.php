@@ -50,6 +50,11 @@ Route::namespace('Admin')
     Route::resource('services','ServiceController');  // Route slider services
     /** End route services **/
 
+    /** Start route news **/
+    Route::resource('news','NewsController');  // Route slider news
+    /** End route news **/
+
+
 
     /** Start route profile **/
     Route::get('profile', 'ProfileController@profile')->name('profile.index'); // Route profile

@@ -21,7 +21,7 @@ class News extends Model implements HasMedia
 
     public function getPhotoAttribute()
     {
-        return $this->getFirstMediaUrl('images','image');
+        return $this->getFirstMediaUrl('images');
     }
 
     public function registerMediaConversions(Media $media = null): void

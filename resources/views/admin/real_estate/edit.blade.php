@@ -1,13 +1,21 @@
 @extends('admin.layouts.app')
 
 @section('titleDashboard')
-   {{__('admin/real_estate.edit_real_estate')}} {{$model->title}}
+ / {{__('admin/real_estate.edit_real_estate')}}  {{$model->title}}
 
 @endsection
 @section('head1')
     <script src="{{asset('admin/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
     <script src="{{asset('admin/global_assets/js/plugins/forms/selects/select2.min.js')}}"></script>
     <script src="{{asset('admin/global_assets/js/plugins/editors/summernote/summernote.min.js')}}"></script>
+    {{--start Uploade Files --}}
+    <script src="{{asset('admin/global_assets/js/demo_pages/uploader_bootstrap.js')}}"></script>
+    <script src="{{asset('admin/global_assets/js/plugins/uploaders/fileinput/fileinput.min.js')}}"></script>
+    <script src="{{asset('admin/global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js')}}"></script>
+    <script src="{{asset('admin/global_assets/js/plugins/uploaders/fileinput/plugins/purify.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.min.js" defer></script>
+
+    {{--end Uploade Files --}}
 @endsection
 
 @section('head2')

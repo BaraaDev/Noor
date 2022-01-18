@@ -7,6 +7,9 @@ use App\Http\Requests\RealEstateRequest;
 use App\Models\RealEstate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
 
 class RealEstateController extends Controller
 {
@@ -62,15 +65,22 @@ class RealEstateController extends Controller
         $real_estates->update($request->all());
 
         $random = Str::random(10);
-
         if ($request->hasFile('image')) {
-            $real_estates
-                ->clearMediaCollection('images')
-                ->addMediaFromRequest('image')
-                ->UsingName($real_estates->title)
-                ->UsingFileName("$random.Webp")
-                ->toMediaCollection('images');
+            foreach ($request->image as $key => $value) {
+
+                try {
+                    $real_estates
+                        ->addMedia($request->image[$key])
+                        ->UsingName($real_estates->title)
+                        ->UsingFileName("$random.Webp")
+                        ->toMediaCollection('images');
+                } catch (DiskDoesNotExist|FileDoesNotExist|FileIsTooBig $e) {
+
+                }
+            }
         }
+
+
 
         return redirect()->route('real_estates.index')
             ->with(['message' => "تم تعديل  $real_estates->title بنجاح "]);

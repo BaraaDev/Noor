@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="refresh" content="100" />
     <title>
-        {{__('admin/admin.dashboard')}} / @yield('titleDashboard')
+        {{__('admin/admin.dashboard')}} @yield('titleDashboard')
     </title>
     <!-- Global stylesheets -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('admin/image/logo.png')}}">

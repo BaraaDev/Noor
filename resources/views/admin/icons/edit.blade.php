@@ -1,17 +1,15 @@
 @extends('admin.layouts.app')
 
 @section('titleDashboard')
-   {{__('admin/icons.edit_icon')}} {{$model->title}}
+   / {{__('admin/icons.edit_icon')}} {{$model->title}}
 @endsection
 
 @section('head1')
     <script src="{{asset('admin/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
     <script src="{{asset('admin/global_assets/js/plugins/forms/selects/select2.min.js')}}"></script>
-    <script src="{{asset('admin/global_assets/js/plugins/editors/summernote/summernote.min.js')}}"></script>
 @endsection
 
 @section('head2')
-    <script src="{{asset('admin/global_assets/js/demo_pages/editor_summernote.js')}}"></script>
     <script src="{{asset('admin/global_assets/js/demo_pages/form_inputs.js')}}"></script>
     <script src="{{asset('admin/global_assets/js/demo_pages/form_select2.js')}}"></script>
 @endsection

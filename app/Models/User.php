@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\MediaLibrary\HasMedia;
@@ -10,7 +11,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class User extends Authenticatable implements HasMedia
 {
-    use InteractsWithMedia, Notifiable;
+    use InteractsWithMedia, Notifiable, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -18,7 +19,7 @@ class User extends Authenticatable implements HasMedia
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','status',
+        'name', 'email', 'password','password','location','phone','job','facebook','twitter','youtube','instagram','status','is_admin',
     ];
 
     /**
@@ -58,5 +59,9 @@ class User extends Authenticatable implements HasMedia
 
     public function scopeStatus($query,$arg){
         return $query->where('status' , $arg);
+    }
+
+    public function scopeIsAdmin($query,$arg){
+        return $query->where('is_admin' , $arg);
     }
 }

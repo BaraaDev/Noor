@@ -1,8 +1,6 @@
 @extends('admin.layouts.app')
-
 @section('titleDashboard')
     /  {{__('admin/projects.edit_projects')}} {{$model->title}}
-
 @endsection
 @section('head1')
     <script src="{{asset('admin/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
@@ -22,7 +20,7 @@
             <div class="d-flex">
                 <div class="breadcrumb">
                     <a href="{{url('/dashboard')}}" class="breadcrumb-item"><i class="icon-home2 mr-2"></i>{{__('admin/admin.dashboard')}}</a>
-                    <a href="{{route('projects.index')}}" class="breadcrumb-item"><i class="icon-briefcase mr-2"></i>{{__('admin/projects.projects')}}</a>
+                    <a href="{{route('projects.index')}}" class="breadcrumb-item"><i class="icon-portfolio mr-2"></i>{{__('admin/projects.projects')}}</a>
                     <span class="breadcrumb-item active">  {{__('admin/projects.edit_projects')}} {{$model->title}}</span>
                 </div>
             </div>

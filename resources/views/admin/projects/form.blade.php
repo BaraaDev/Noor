@@ -7,7 +7,7 @@
             <div class="form-group-feedback form-group-feedback-right">
                 <div class="input-group">
                     <span class="input-group-prepend">
-                        <span class="input-group-text"><i class="icon-grid6"></i></span>
+                        <span class="input-group-text"><i class="icon-portfolio"></i></span>
                     </span>
                     <input type="text" name="{{$inputTitle}}" id="{{$inputTitle}}" class="form-control maxlength-badge-position @error($inputTitle) border-danger-400 @enderror" placeholder="{{__('admin/projects.name_projects')}}" value="{{Request::old($inputTitle) ? Request::old($inputTitle) : $model->$inputTitle}}" required autocomplete="off">
                     @error($inputTitle)
