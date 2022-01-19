@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ServiceRequest;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -30,7 +31,7 @@ class ServiceController extends Controller
         return view('admin.services.create');
     }
 
-    public function store(Request $request)
+    public function store(ServiceRequest $request)
     {
         $services = Service::create($request->all());
 
@@ -45,7 +46,7 @@ class ServiceController extends Controller
         return view('admin.services.edit',compact('model'));
     }
 
-    public function update(Request $request, $id)
+    public function update(ServiceRequest $request, $id)
     {
         $services = Service::findOrFail($id);
         $services->update($request->all());

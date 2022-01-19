@@ -4,45 +4,96 @@
     <list default="true" id="7efb760b-744f-42e3-81b8-2334c12f4d9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/RealEstateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/RealEstateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IconController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IconController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/RealEstate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/RealEstate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2022_01_11_153617_create_contacts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_01_11_153617_create_contacts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/36/conversions/slSA6QLS9V-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/36/slSA6QLS9V.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/37/bXWp6HXoaF.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/37/conversions/bXWp6HXoaF-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/38/EifxGEtl50.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/38/conversions/EifxGEtl50-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/39/P6nPRD7Dx4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/39/conversions/P6nPRD7Dx4-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/40/LNjK1EiABY.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/40/conversions/LNjK1EiABY-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/41/conversions/xSBzkE66Ux-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/41/xSBzkE66Ux.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/42/conversions/qWuGijAK0I-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/42/qWuGijAK0I.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/43/conversions/gkYubIuF9X-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/43/gkYubIuF9X.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/44/WTo1KkBlc5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/44/conversions/WTo1KkBlc5-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/47/3SZ62kjql9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/48/conversions/nmvYlpC93E-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/48/nmvYlpC93E.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/49/NHTx1rT4iQ.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/50/pTq1sVUjCP.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/51/0qSdRTVk3N.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/52/yEz9k09PRL.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/53/jcQS2HdBV1.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/54/Camille-Mcmil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/54/conversions/Camille-Mcmil-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/65/2DbfPW130U.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/65/conversions/2DbfPW130U-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/66/XF9L6LLxxu.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/66/conversions/XF9L6LLxxu-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/67/XF9L6LLxxu.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/67/conversions/XF9L6LLxxu-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/68/XF9L6LLxxu.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/68/conversions/XF9L6LLxxu-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/69/XF9L6LLxxu.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/69/conversions/XF9L6LLxxu-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/70/UD5Ho3UaN7.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/70/conversions/UD5Ho3UaN7-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/71/UD5Ho3UaN7.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/71/conversions/UD5Ho3UaN7-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/72/UD5Ho3UaN7.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/72/conversions/UD5Ho3UaN7-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/73/VwYF4mP3d5.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/73/conversions/VwYF4mP3d5-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/74/VwYF4mP3d5.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/74/conversions/VwYF4mP3d5-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/75/VwYF4mP3d5.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/75/conversions/VwYF4mP3d5-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/76/VwYF4mP3d5.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/76/conversions/VwYF4mP3d5-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/77/7x62bcdQjJ.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/77/conversions/7x62bcdQjJ-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/78/7x62bcdQjJ.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/78/conversions/7x62bcdQjJ-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/79/7x62bcdQjJ.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/79/conversions/7x62bcdQjJ-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/80/ByvoK144Ij.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/80/conversions/ByvoK144Ij-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/81/320J8sV5kI.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/81/conversions/320J8sV5kI-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/82/9m5HSMrxyn.Webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/media/82/conversions/9m5HSMrxyn-image.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/admin/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/admin/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/admin/projects.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/admin/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/admin/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/icons/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/icons/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/icons/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/icons/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/icons/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/icons/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/real_estate/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/real_estate/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/real_estate/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/real_estate/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/services/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/services/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/services/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/services/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/services/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/visit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/visit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,19 +245,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/stevebauman/active/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Middleware" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\laragon\www\noor\vendor\stevebauman\active\src" />
-      <recent name="E:\laragon\www\noor\app" />
-      <recent name="E:\laragon\www\noor\resources\views\admin" />
+      <recent name="E:\laragon\www\noor\app\Http\Middleware" />
+      <recent name="E:\laragon\www\noor\database\seeds" />
+      <recent name="E:\laragon\www\noor\resources\views\vendor" />
       <recent name="E:\laragon\www\noor\app\Http\Controllers\Admin" />
-      <recent name="E:\laragon\www\noor\resources\lang\ar\admin" />
+      <recent name="E:\laragon\www\noor\resources\views\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\laragon\www\noor\resources\views\vendor\pagination" />
       <recent name="E:\laragon\www\noor\resources\views\auth" />
     </key>
   </component>
@@ -226,7 +278,8 @@
       <updated>1642337025643</updated>
       <workItem from="1642337027526" duration="7927000" />
       <workItem from="1642398642245" duration="16966000" />
-      <workItem from="1642505624755" duration="14051000" />
+      <workItem from="1642505624755" duration="17547000" />
+      <workItem from="1642597641166" duration="4546000" />
     </task>
     <servers />
   </component>

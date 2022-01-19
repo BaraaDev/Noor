@@ -26,6 +26,7 @@
             <div class="column">
                 <div class="sec-title">
                     @include('admin.layouts.messages.message')
+                    @include('admin.layouts.partials.validation-errors')
                     <span class="title">نسعى دائماً لخدمتك...</span>
                     <h2>اتصل بنا الآن</h2>
                 </div>

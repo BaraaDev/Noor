@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\IconRequest;
 use App\Models\Icon;
 use Illuminate\Http\Request;
 
@@ -30,7 +31,7 @@ class IconController extends Controller
         return view('admin.icons.create');
     }
 
-    public function store(Request $request)
+    public function store(IconRequest $request)
     {
         $icons = Icon::create($request->all());
 
@@ -45,7 +46,7 @@ class IconController extends Controller
         return view('admin.icons.edit',compact('model'));
     }
 
-    public function update(Request $request, $id)
+    public function update(IconRequest $request, $id)
     {
         $icons = Icon::findOrFail($id);
         $icons->update($request->all());

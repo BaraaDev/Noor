@@ -78,6 +78,7 @@
 
     </div>
     <!-- /main sidebar -->
+@yield('sidebar')
     <!-- Main content -->
     <div class="content-wrapper">
         <!-- Content area -->

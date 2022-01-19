@@ -8,10 +8,8 @@
     </div>
 
     <div class="navbar-collapse collapse" id="navbar-footer">
-			<span class="navbar-text">
-				موقع قهوة المبرمجين 2020 - {{date('Y')}} &copy;
+			<span class="navbar-text" title="Design and programming Baraa Samy ">
+                صممت من قبل موقع <a href="https://programmerscaffe.com/home">قهوة المبرمجين</a> 2020 - {{date('Y')}} &copy;
 			</span>
-
     </div>
-
 </div><!-- /footer -->

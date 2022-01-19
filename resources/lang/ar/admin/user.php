@@ -16,6 +16,9 @@ return array(
     'create_new_user'            => 'أنشئ مستخدم جديد',
     'userCount'                  => 'عدد المستخدمين',
     'choose_user_job'            => 'اختر وظيفة المستخدم',
+    'job'                        => 'وظيفة العمل',
+    'location_enter'             => 'اكتب الدولة',
+    'country'                    => 'الدولة',
     'choose_user_status'         => 'إختر حالة المستخدم',
     'status'                     => 'الحالة',
     'active'                     => 'نشط',
@@ -48,6 +51,6 @@ return array(
     'save_changes'               => 'حفظ التغيرات',
     'setting_account'            => 'إعداد الحساب',
     'active_sessions'            => 'جلسات نشطة',
-    'User_recent_activity'            => 'آخر النشاطات للمستخدم',
+    'User_recent_activity'       => 'آخر النشاطات للمستخدم',
 
 );

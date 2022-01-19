@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ProjectRequest;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
@@ -30,7 +31,7 @@ class ProjectController extends Controller
         return view('admin.projects.create');
     }
 
-    public function store(Request $request)
+    public function store(ProjectRequest $request)
     {
         $projects = Project::create($request->all());
 
@@ -45,7 +46,7 @@ class ProjectController extends Controller
         return view('admin.projects.edit',compact('model'));
     }
 
-    public function update(Request $request, $id)
+    public function update(ProjectRequest $request, $id)
     {
         $projects = Project::findOrFail($id);
         $projects->update($request->all());

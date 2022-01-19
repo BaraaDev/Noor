@@ -22,7 +22,7 @@
                     <i class="icon-paragraph-justify3"></i>
                 </a>
             </li>
-
+            @yield('navbar-nav')
         </ul>
 
         <span class="badge bg-success ml-md-3 mr-md-auto">Online</span>
@@ -48,7 +48,7 @@
                                     <img src="{{$user->photo}}" width="36" height="36" class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <a href="#" class="media-title font-weight-semibold">{{$user->name}}</a>
+                                    <a href="{{route('users.edit',$user->id)}}" class="media-title font-weight-semibold">{{$user->name}}</a>
                                     <span class="d-block text-muted font-size-sm">{{$user->location}}</span>
                                 </div>
                                 <div class="ml-3 align-self-center"><span class="badge badge-mark @if($user->status == 1) border-success @else border-danger @endif "></span></div>
@@ -74,7 +74,7 @@
                 <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
                     <div class="dropdown-content-header">
                         <span class="font-weight-semibold">الرسائل</span>
-                        <a href="#" class="text-default"><i class="icon-compose"></i></a>
+
                     </div>
 
                     <div class="dropdown-content-body dropdown-scrollable">
@@ -83,14 +83,14 @@
                                 @foreach($contacts as $contact)
                                 <li class="media">
                                     <div class="mr-3 position-relative">
-                                        <img src="{{asset('website/users/avatar.jpg')}}" width="36" height="36" class="rounded-circle" alt="">
+                                        <img src="{{asset('users/avatar.jpg')}}" width="36" height="36" class="rounded-circle" alt="">
                                     </div>
 
                                     <div class="media-body">
                                         <div class="media-title">
-                                            <a href="#">
+                                            <a href="{{route('email.show',$contact->id)}}">
                                                 <span class="font-weight-semibold">{!! \Illuminate\Support\Str::limit($contact->name, $limit = 52, $end = '...' ) !!}</span>
-                                                <span class="text-muted float-right font-size-sm">{{$contact->created_at->format('H:i')}}</span>
+                                                <span class="text-muted float-right font-size-sm" title="{{$contact->created_at}}">{{$contact->created_at->format('H:i')}}</span>
                                             </a>
                                         </div>
 

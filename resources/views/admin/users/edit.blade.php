@@ -28,39 +28,12 @@
                     <a href="{{route('users.index')}}" class="breadcrumb-item"><i class="icon-users4 mr-2"></i> المستخدمين</a>
                     <span class="breadcrumb-item active"> تعديل المستخدم "{{$model->name}}"</span>
                 </div>
-
-                <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-            </div>
-
-            <div class="header-elements d-none">
-                <div class="breadcrumb justify-content-center">
-                    <a href="#" class="breadcrumb-elements-item">
-                        <i class="icon-comment-discussion mr-2"></i>
-                        الدعم
-                    </a>
-
-                    <div class="breadcrumb-elements-item dropdown p-0">
-                        <a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-                            <i class="icon-gear mr-2"></i>
-                            الإعدادات
-                        </a>
-
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-                            <a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-                            <a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="page-header-content header-elements-md-inline">
             <div class="page-title d-flex">
                 <h4><i class="icon-arrow-right6 mr-2"></i> <span class="font-weight-semibold">الرئيسية</span> -  تعديل المستخدم "{{$model->name}}"</h4>
-                <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
             </div>
 
         </div>
@@ -70,16 +43,7 @@
 
         <!-- Form validation -->
         <div class="card">
-            <div class="card-header header-elements-inline">
-                <h5 class="card-title"> التعديل على المستخدم "{{$model->name}}"</h5>
-                <div class="header-elements">
-                    <div class="list-icons">
-                        <a class="list-icons-item" data-action="collapse"></a>
-                        <a class="list-icons-item" id="reload" data-action="reload"></a>
-                        <a class="list-icons-item" data-action="remove"></a>
-                    </div>
-                </div>
-            </div>
+
 
             <div class="card-body">
                 <p class="mb-4"> تحقق جيداً من البيانات</p>
@@ -90,7 +54,6 @@
                     {{ method_field('put') }}
 
                     <fieldset class="mb-3">
-                        <legend class="text-uppercase font-size-sm font-weight-bold">بيانات المستخدم</legend>
 
                         @include('admin.users.form')
                     </fieldset>

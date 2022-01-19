@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -26,7 +27,7 @@ class UserController extends Controller
         return view('admin.users.create');
     }
 
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
         $request->merge(['password' => bcrypt($request->password)]);
         $users = User::create($request->all());
@@ -49,7 +50,7 @@ class UserController extends Controller
         return view('admin.users.edit',compact('model'));
     }
 
-    public function update(Request $request, $id)
+    public function update(UserRequest $request, $id)
     {
         $request->merge(['password' => bcrypt($request->password)]);
         $users = User::findOrFail($id);

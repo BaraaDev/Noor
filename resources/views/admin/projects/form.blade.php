@@ -2,14 +2,14 @@
     <!-- Start name input -->
     @php $inputTitle = "title"; @endphp
     <div class="form-group row">
-        <label class="col-form-label col-lg-3">{{__('admin/projects.projects')}}<span class="text-danger">*</span></label>
+        <label class="col-form-label col-lg-3">{{__('admin/projects.title_project')}}<span class="text-danger">*</span></label>
         <div class="col-lg-9">
             <div class="form-group-feedback form-group-feedback-right">
                 <div class="input-group">
                     <span class="input-group-prepend">
                         <span class="input-group-text"><i class="icon-portfolio"></i></span>
                     </span>
-                    <input type="text" name="{{$inputTitle}}" id="{{$inputTitle}}" class="form-control maxlength-badge-position @error($inputTitle) border-danger-400 @enderror" placeholder="{{__('admin/projects.name_projects')}}" value="{{Request::old($inputTitle) ? Request::old($inputTitle) : $model->$inputTitle}}" required autocomplete="off">
+                    <input type="text" name="{{$inputTitle}}" id="{{$inputTitle}}" class="form-control maxlength-badge-position @error($inputTitle) border-danger-400 @enderror" placeholder="{{__('admin/projects.title_project')}}" value="{{Request::old($inputTitle) ? Request::old($inputTitle) : $model->$inputTitle}}" required autocomplete="off">
                     @error($inputTitle)
                     <div class="form-control-feedback text-danger-400">
                         <i class="icon-cancel-circle2"></i>

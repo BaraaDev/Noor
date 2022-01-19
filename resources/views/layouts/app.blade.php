@@ -11,7 +11,7 @@
 
 <body class="rtl">
 <!-- WhatsApp-->
-<a href="https://api.whatsapp.com/send?phone=905435078511" class="float" target="_blank">
+<a href="https://wa.me/{{$setting->whatsApp}}" class="float" target="_blank" rel="nofollow">
     <i style="color: white;" class="fa fa-whatsapp my-float"></i>
 </a>
 

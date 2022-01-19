@@ -14,7 +14,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 Route::namespace('Admin')
-    ->middleware('auth','localeSessionRedirect', 'localizationRedirect', 'localeViewPath')
+    ->middleware('admin','auth','localeSessionRedirect', 'localizationRedirect', 'localeViewPath')
     ->prefix('dashboard',LaravelLocalization::setLocale())
     ->group(function () {
 
@@ -54,7 +54,10 @@ Route::namespace('Admin')
     Route::resource('news','NewsController');  // Route slider news
     /** End route news **/
 
+    /** Start route email **/
+    Route::resource('email' ,'MailController'); // Route slider email
 
+    /** Start route email **/
 
     /** Start route profile **/
     Route::get('profile', 'ProfileController@profile')->name('profile.index'); // Route profile

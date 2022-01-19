@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactRequest;
 use App\Models\Category;
 use App\Models\Contact;
 use App\Models\Icon;
@@ -22,6 +23,7 @@ class HomeController extends Controller
         $categories     = Category::status(1)->limit(6)->get();
         $real_estates   = RealEstate::status(1)->limit(6)->latest()->get();
         $users          = User::isadmin('admin')->limit(3)->get();
+        visit('visit_site');
 
         return view('welcome',compact('icons','services','projects','categories','real_estates','users'));
     }
@@ -93,7 +95,7 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function contactPost(Request $request)
+    public function contactPost(ContactRequest $request)
     {
         Contact::create($request->all());
 

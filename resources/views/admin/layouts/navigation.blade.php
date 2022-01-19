@@ -75,8 +75,8 @@
                 <i class="icon-thumbs-up2"></i>
                 <span>{{__('admin/icons.icon')}}</span>
             </a>
-            <ul class="nav nav-group-sub" data-submenu-title="{{__('admin/icons.icon')}}">
-                <li class="nav-item"><a href="{{route('icons.index')}}" class="nav-link {{active()->route('icons.index')}}"><span><span>{{__('admin/icons.icon')}}</span></span></a></li>
+            <ul class="nav nav-group-sub" data-submenu-title="{{__('admin/icons.icons')}}">
+                <li class="nav-item"><a href="{{route('icons.index')}}" class="nav-link {{active()->route('icons.index')}}"><span><span>{{__('admin/icons.icons')}}</span></span></a></li>
                 <li class="nav-item"><a href="{{route('icons.create')}}" class="nav-link {{active()->route('icons.create')}}"><span>{{__('admin/icons.add_icons')}}</span></a></li>
             </ul>
         </li>
@@ -102,6 +102,16 @@
             <ul class="nav nav-group-sub" data-submenu-title="{{__('admin/news.the_news')}}">
                 <li class="nav-item"><a href="{{route('news.index')}}" class="nav-link {{active()->route('news.index')}}"><span><span>{{__('admin/news.the_news')}}</span></span></a></li>
                 <li class="nav-item"><a href="{{route('news.create')}}" class="nav-link {{active()->route('news.create')}}"><span>{{__('admin/news.add_news')}}</span></a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item nav-item-submenu @if(active()->route('email.*')) nav-item-expanded nav-item-open @endif">
+            <a href="{{route('email.index')}}" class="nav-link {{active()->route('email.*')}}">
+                <i class="icon-mail5"></i>
+                <span>البريد الإلكتروني</span>
+            </a>
+            <ul class="nav nav-group-sub" data-submenu-title="البريد الإلكتروني">
+                <li class="nav-item"><a href="{{route('email.index')}}" class="nav-link {{active()->route('email.index')}}"><i class="icon-drawer-in" ></i><span>البريد الوارد</span></a></li>
             </ul>
         </li>
 

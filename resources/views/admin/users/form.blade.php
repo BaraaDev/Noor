@@ -100,29 +100,54 @@
     </div>
 </div><!-- End phone input -->
 
-<!-- Start jub input -->
-@php $jub = "jub"; @endphp
+<!-- Start job input -->
+@php $job = "job"; @endphp
 <div class="form-group row">
-    <label class="col-form-label col-lg-3">{{__('admin/user.jub')}}<span class="text-danger">*</span></label>
+    <label class="col-form-label col-lg-3">{{__('admin/user.job')}}<span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <div class="form-group-feedback form-group-feedback-right">
             <div class="input-group">
                 <span class="input-group-prepend">
-                    <span class="input-group-text"><i class="icon-jub"></i></span>
+                    <span class="input-group-text"><i class="icon-job"></i></span>
                 </span>
-                <input type="text" name="{{$jub}}" id="{{$jub}}" class="form-control @error($jub) border-danger-400 @enderror" placeholder="{{__('admin/user.jub_enter')}}" value="{{Request::old($jub) ? Request::old($jub) : $model->$jub}}">
-                @error($jub)
+                <input type="text" name="{{$job}}" id="{{$job}}" class="form-control @error($job) border-danger-400 @enderror" placeholder="{{__('admin/user.job_enter')}}" value="{{Request::old($job) ? Request::old($job) : $model->$job}}">
+                @error($job)
                 <div class="form-control-feedback text-danger-400">
                     <i class="icon-cancel-circle2"></i>
                 </div>
                 @enderror
             </div>
         </div>
-        @error($jub)
+        @error($job)
         <span class="form-text text-danger-400">{{ $message }}</span>
         @enderror
     </div>
-</div><!-- End jub input -->
+</div><!-- End job input -->
+
+
+<!-- Start location input -->
+@php $location = "location"; @endphp
+<div class="form-group row">
+    <label class="col-form-label col-lg-3">{{__('admin/user.country')}}<span class="text-danger">*</span></label>
+    <div class="col-lg-9">
+        <div class="form-group-feedback form-group-feedback-right">
+            <div class="input-group">
+                <span class="input-group-prepend">
+                    <span class="input-group-text"><i class="icon-earth"></i></span>
+                </span>
+                <input type="text" name="{{$location}}" id="{{$location}}" class="form-control @error($location) border-danger-400 @enderror" placeholder="{{__('admin/user.location_enter')}}" value="{{Request::old($location) ? Request::old($location) : $model->$location}}">
+                @error($location)
+                <div class="form-control-feedback text-danger-400">
+                    <i class="icon-cancel-circle2"></i>
+                </div>
+                @enderror
+            </div>
+        </div>
+        @error($location)
+        <span class="form-text text-danger-400">{{ $message }}</span>
+        @enderror
+    </div>
+</div><!-- End location input -->
 
 <!-- Start facebook input -->
 @php $facebook = "facebook"; @endphp

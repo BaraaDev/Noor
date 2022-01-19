@@ -1,6 +1,7 @@
 <?php
 return [
     'projects'                   => 'جميع المشاريع',
+    'title_project'              => 'عنوان المشروع',
     'projectsCount'              => 'عدد المشاريع',
     'the_projects'               => 'المشاريع',
     'all_projects'               => 'جميع المشاريع الموجوده بالموقع',

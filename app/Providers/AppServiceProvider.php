@@ -30,8 +30,8 @@ class AppServiceProvider extends ServiceProvider
     {
         view()->share('users',User::orderBy('created_at','DESC')->whereDate('created_at', today())->limit(25)->get());
         view()->share('contactUsCount',Contact::where('is_read',0)->orderBy('id','desc')->count());
-        view()->share('contacts',Contact::orderBy('created_at','DESC')->limit(8)->get());
-        view()->share('news_paper',News::status(1)->orderBy('created_at','DESC')->limit(2)->get());
+        view()->share('contacts',Contact::orderBy('created_at','DESC')->limit(30)->get());
+        view()->share('news_paper',News::orderBy('created_at','DESC')->limit(2)->get());
         view()->share('settings',Setting::orderBy('id','desc')->latest()->get());
         view()->share('setting',Setting::first());
     }
